@@ -1,0 +1,12 @@
+@import "../../node_modules/normalize.scss/normalize";
+
+@import "global/fonts";
+@import "global/base";
+@import "global/mixins";
+
+@import "sections/header";
+@import "sections/hero";
+@import "sections/menu";
+@import "sections/dishes";
+@import "sections/gallery";
+@import "sections/footer";

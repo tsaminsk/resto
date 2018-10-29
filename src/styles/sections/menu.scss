@@ -1,0 +1,155 @@
+.menu{
+	 width: 100%;
+	 border-top: 4px solid #f34949;
+}
+
+.menu .container{
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+	 align-items: center;
+	 margin-bottom: 200px;
+
+	 @media (max-width: 1101px){
+		margin-bottom: 70px;
+	}
+}
+
+.menu__title{
+	margin-top: 0;
+	/*padding-top: 25px;*/
+	background-color:  #f34949;
+	width: 155px;
+	height: 75px;
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 60px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 117px;
+
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-bottom: 17px solid #fff;
+	    border-left: 77.5px solid transparent;
+	    border-right: 77.5px solid transparent;
+	}
+
+	@media (max-width: 1101px){
+		margin-bottom: 50px;
+	}
+
+	@media (max-width: 600px){
+		margin-bottom: 30px;
+	}
+}
+
+.menu__content{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media (max-width: 750px){
+		flex-wrap: wrap;
+	}
+}
+
+.menu__items{
+	flex-basis: 44%;
+	margin-bottom: 90px;
+
+	@media (max-width: 1101px){
+		margin-bottom: 40px;
+	}
+
+	@media (max-width: 750px){
+		flex-basis: 90%;
+		margin-bottom: 0;
+	}
+	
+}
+/*=============menu item===============*/
+.menu__item{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 61px;
+
+	@media (max-width: 1101px){
+		margin-bottom: 30px;
+	}
+
+	@media (max-width: 700px){
+		margin-bottom: 10px;
+	}
+}
+
+.menu__item-name{
+	color:  #555454;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	margin-bottom: 8px;
+}
+
+.menu__item-recipe{
+	color:  #b7b7b7;
+	font-size: 12px;
+	font-weight: 300;
+	font-style: italic;
+	text-align: left;
+
+}
+
+.menu__item-decor{
+	flex-grow: 4;
+	margin: 0 42px;
+	border-top: 1px solid  #e3e1e1;;
+	height: 22px;
+	
+}
+
+.menu__item-price{
+	width: 28px;
+	color:  #555555;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 60px;
+	text-align: right;
+}
+/*=============item end==============*/
+.menu__button{
+	@media (max-width: 700px){
+		margin-top: 20px;
+	}
+}
+
+.menu__button-item{
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #d7d5d5;
+	box-sizing: border-box;
+	background-color:  #ffffff;
+	width: 133px;
+	height: 34px;
+	font-family: 'aleo regular';
+	color:  #b7b7b7;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: center;
+
+	& img{
+		margin-left: 10px;
+	}
+}
+

@@ -1,0 +1,20 @@
+section.menu
+	.container
+		h2.menu__title the menu
+
+		.menu__content
+			.menu__items
+				+menu__item('Voluptate cillum fugiat', 'Cheese_ tomato_ mushrooms_ onions', '50')
+				+menu__item('Metus varius laoreet', 'Chicken_ mozzarella cheese_ onions', '62')
+				+menu__item('Donec sodales magna', 'Tuna_ Sweetcorn_ Cheese', '25')
+				+menu__item('Saugue velit cursus', 'Pineapple_ Minced Beef_ Cheese', '30')
+			.menu__items
+				+menu__item('Arcu pede enim justo', 'Tuna_ Sweetcorn_ Cheese', '45')
+				+menu__item('Cras dapibussemper nisi', 'Pineapple_ Minced Beef_ Cheese', '32')
+				+menu__item('Quam semper libero', 'Cheese_ tomato_ mushrooms_ onions', '15')
+				+menu__item('Nam eget dui Etiam', 'Chicken_ mozzarella cheese_ onions', '35')
+
+		.menu__button
+			button.menu__button-item
+				| load more &nbsp;&nbsp;&nbsp;|
+				img(src="images/Shape_menu.png" alt=`&or;`)

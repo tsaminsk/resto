@@ -1,0 +1,23 @@
+mixin menu__item(name, recipe, price)
+	.menu__item
+		.menu__item-description
+			.menu__item-name= name
+			.menu__item-recipe= recipe
+		.menu__item-decor
+		.menu__item-price= `$${price}`
+
+mixin dishesItem(img, name, price, stars)
+	.dishes__content-item
+		.dishes__content-item--img
+			img(src=`images/dishes/${img}` alt="вкуснятина....")
+		.dishes__content-item--description
+			.dishes__content-item_name= name
+			.dishes__content-item_price=`$${price}`
+		- var n = 0;
+			ul.dishes__content-item--stars
+				while n < 5
+					if n < stars
+						li.dishes__content-item--star.dishes__content-item--star_active= ` `
+					else
+						li.dishes__content-item--star= ` `
+					-n++

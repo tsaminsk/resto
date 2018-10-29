@@ -1,0 +1,11 @@
+header.header.container
+	.header__logo
+		a.header__logo-link(href="#")
+			img.header__logo-img_first(src="./images/logo/Resto.png" alt="logo")
+			img.header__logo-img_second(src="./images/logo/Logo_after.png" alt="logo")
+	.header__nav
+		ul.header__nav-items
+			each item, key in menuItems
+				li.header__nav-item
+					a.header__nav-link(href="" + item)= key
+

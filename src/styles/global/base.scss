@@ -1,0 +1,18 @@
+html{
+	
+}
+body{
+	font-family: 'aleo regular';
+}
+.container{
+	width: 1102px;
+	margin: 0 auto;
+
+	@media (max-width: 1101px){
+		width: 90%;
+	}
+
+	@media (max-width: 800px){
+		width: 98%;
+	}
+}
